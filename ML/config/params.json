@@ -1,0 +1,26 @@
+{
+  "model": {
+    "gnn_type": ["GCN", "GraphSage", "GAT"],
+    "hidden_dims": [[64], [32]],
+    "add_skip": [true, false]
+  },
+  "dataset": {
+    "name": "polblogs",
+    "features": {
+      "feat_type": ["random", "dummy", "Node2Vec"],
+      "feat_dim": [64, 32],
+      "Node2Vec_file": "Node2Vec_64_10_10_5.npy"
+    },
+    "node_masking": [0.1, 0.5, 0.9]
+  },
+  "train": {
+    "epoch": 20,
+    "l2": 0.00001,
+    "lr": 0.0005,
+    "early_stop_patience": 5
+  },
+  "evaluate": {
+    "metrics": ["F1", "AUC"],
+    "node_clf": "LogisticRegression"
+  }
+}

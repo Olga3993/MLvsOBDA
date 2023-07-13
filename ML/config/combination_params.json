@@ -1,0 +1,23 @@
+{
+  "model": {
+    "gnn_type": ["GAT", "GCN", "GAT-sep", "SAGE", "GCN-sep"],
+    "hidden_dims": [[128, 128], [128]],
+    "add_skip": [true, false],
+    "use_input_weighting": [true],
+    "normalization": ["None"]
+  },
+  "dataset": {
+    "name": "pokec-1"
+  },
+  "features": {
+    "feat_type": ["dummy", "random"],
+    "feat_dim": [128],
+    "Node2Vec_file": "Node2Vec_32_8_10_5.npy"
+  },
+  "masking": {
+    "node_masking": [0.1, 0.5, 0.9],
+    "test_ratio": [0.3],
+    "eval_train_ratios": [0.25, 0.5, 0.75],
+    "seed": [10, 100]
+  }
+}

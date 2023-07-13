@@ -1,0 +1,274 @@
+{
+  "model_params": {
+    "polblogs": [
+      {
+        "gnn_type": "GCN",
+        "add_skip": false,
+        "hidden_dims": [
+          64
+        ],
+        "use_input_weighting": false,
+        "features": "dummy",
+        "normalization": "LayerNorm"
+      },
+      {
+        "gnn_type": "GCN",
+        "add_skip": true,
+        "hidden_dims": [
+          64
+        ],
+        "use_input_weighting": false,
+        "features": "dummy",
+        "normalization": "LayerNorm"
+      },
+      {
+        "gnn_type": "GCN-sep",
+        "add_skip": false,
+        "hidden_dims": [
+          64,
+          64
+        ],
+        "use_input_weighting": false,
+        "features": "dummy",
+        "normalization": "None"
+      },
+      {
+        "gnn_type": "GCN-sep",
+        "add_skip": true,
+        "hidden_dims": [
+          64
+        ],
+        "use_input_weighting": false,
+        "features": "dummy",
+        "normalization": "LayerNorm"
+      },
+      {
+        "gnn_type": "SAGE",
+        "add_skip": false,
+        "hidden_dims": [
+          64,
+          64
+        ],
+        "use_input_weighting": false,
+        "features": "dummy",
+        "normalization": "None"
+      },
+      {
+        "gnn_type": "SAGE",
+        "add_skip": true,
+        "hidden_dims": [
+          64,
+          64
+        ],
+        "use_input_weighting": false,
+        "features": "dummy",
+        "normalization": "None"
+      },
+      {
+        "gnn_type": "GAT",
+        "add_skip": false,
+        "hidden_dims": [
+          64
+        ],
+        "use_input_weighting": false,
+        "features": "dummy",
+        "normalization": "LayerNorm"
+      },
+      {
+        "gnn_type": "GAT",
+        "add_skip": true,
+        "hidden_dims": [
+          64
+        ],
+        "use_input_weighting": false,
+        "features": "dummy",
+        "normalization": "LayerNorm"
+      },
+      {
+        "gnn_type": "GAT-sep",
+        "add_skip": false,
+        "hidden_dims": [
+          64,
+          64
+        ],
+        "use_input_weighting": false,
+        "features": "dummy",
+        "normalization": "LayerNorm"
+      },
+      {
+        "gnn_type": "GAT-sep",
+        "add_skip": true,
+        "hidden_dims": [
+          64
+        ],
+        "use_input_weighting": false,
+        "features": "dummy",
+        "normalization": "BatchNorm"
+      }
+    ],
+    "deezer": [
+      {
+        "gnn_type": "GCN",
+        "add_skip": false,
+        "hidden_dims": [
+          128,
+          128
+        ],
+        "use_input_weighting": true,
+        "features": "Node2Vec",
+        "Node2Vec_file": "Node2Vec_32_10_10_10.npy",
+        "normalization": "BatchNorm"
+      },
+      {
+        "gnn_type": "GCN",
+        "add_skip": true,
+        "hidden_dims": [
+          128
+        ],
+        "use_input_weighting": false,
+        "features": "Node2Vec",
+        "Node2Vec_file": "Node2Vec_32_10_10_10.npy",
+        "normalization": "BatchNorm"
+      },
+      {
+        "gnn_type": "GCN-sep",
+        "add_skip": false,
+        "hidden_dims": [
+          128
+        ],
+        "use_input_weighting": true,
+        "features": "Node2Vec",
+        "Node2Vec_file": "Node2Vec_32_10_10_10.npy",
+        "normalization": "BatchNorm"
+      },
+      {
+        "gnn_type": "GCN-sep",
+        "add_skip": true,
+        "hidden_dims": [
+          128,
+          128
+        ],
+        "use_input_weighting": true,
+        "features": "Node2Vec",
+        "Node2Vec_file": "Node2Vec_32_10_10_10.npy",
+        "normalization": "BatchNorm"
+      },
+      {
+        "gnn_type": "SAGE",
+        "add_skip": false,
+        "hidden_dims": [
+          128
+        ],
+        "use_input_weighting": true,
+        "features": "Node2Vec",
+        "Node2Vec_file": "Node2Vec_32_10_10_10.npy",
+        "normalization": "BatchNorm"
+      },
+      {
+        "gnn_type": "SAGE",
+        "add_skip": true,
+        "hidden_dims": [
+          128,
+          128
+        ],
+        "use_input_weighting": false,
+        "features": "Node2Vec",
+        "Node2Vec_file": "Node2Vec_32_10_10_10.npy",
+        "normalization": "BatchNorm"
+      },
+      {
+        "gnn_type": "GAT",
+        "add_skip": false,
+        "hidden_dims": [
+          128
+        ],
+        "use_input_weighting": true,
+        "features": "dummy",
+        "normalization": "BatchNorm"
+      },
+      {
+        "gnn_type": "GAT",
+        "add_skip": true,
+        "hidden_dims": [
+          128
+        ],
+        "use_input_weighting": true,
+        "features": "dummy",
+        "normalization": "BatchNorm"
+      },
+      {
+        "gnn_type": "GAT-sep",
+        "add_skip": false,
+        "hidden_dims": [
+          64
+        ],
+        "use_input_weighting": true,
+        "features": "dummy",
+        "normalization": "BatchNorm"
+      },
+      {
+        "gnn_type": "GAT-sep",
+        "add_skip": true,
+        "hidden_dims": [
+          64,
+          64
+        ],
+        "use_input_weighting": true,
+        "features": "dummy",
+        "normalization": "BatchNorm"
+      }
+    ],
+    "pokec-1": [
+      {
+        "gnn_type": "GCN",
+        "add_skip": false,
+        "hidden_dims": [
+          128, 128
+        ],
+        "use_input_weighting": true,
+        "features": "dummy",
+        "normalization": "None"
+      },
+      {
+        "gnn_type": "GAT",
+        "add_skip": false,
+        "hidden_dims": [
+          128, 128
+        ],
+        "use_input_weighting": true,
+        "features": "dummy",
+        "normalization": "None"
+      },
+      {
+        "gnn_type": "GAT",
+        "add_skip": true,
+        "hidden_dims": [
+          128, 128
+        ],
+        "use_input_weighting": true,
+        "features": "random",
+        "normalization": "None"
+      },
+      {
+        "gnn_type": "GAT-sep",
+        "add_skip": false,
+        "hidden_dims": [
+          128, 128
+        ],
+        "use_input_weighting": true,
+        "features": "dummy",
+        "normalization": "None"
+      },
+      {
+        "gnn_type": "GAT-sep",
+        "add_skip": true,
+        "hidden_dims": [
+          128, 128
+        ],
+        "use_input_weighting": true,
+        "features": "random",
+        "normalization": "None"
+      }
+    ]
+  }
+}
